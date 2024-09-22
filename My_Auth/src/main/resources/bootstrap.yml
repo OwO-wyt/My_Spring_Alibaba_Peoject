@@ -1,0 +1,28 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /auth
+
+spring:
+  application:
+    name: my-auth
+  profiles:
+    active: dev
+  devtools:
+    restart:
+      enabled: false
+      log-condition-evaluation-delta: false
+
+logging:
+  level:
+    com.fh.service.*: warn
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

@@ -1,0 +1,36 @@
+server:
+  port: 8081
+
+nacos:
+  server-addr:  192.168.237.1:8848
+  namespace: 5fe6a24d-e047-4587-b371-ff704a8cba65
+  group: DEFAULT_GROUP
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacos.server-addr}
+        namespace: ${nacos.namespace}
+      config:
+        enabled: true
+        server-addr: ${nacos.server-addr}
+        namespace: ${nacos.namespace}
+        prefix: ${spring.application.name}
+        file-extension: yml
+        group: ${nacos.group}
+        ext-config:
+          - data-id: datasource.yml
+            group: ${nacos.group}
+            refresh: true
+#          - data-id: kafka-config.yml
+#            group: ${nacos.group}
+#            refresh: true
+#          - data-id: redis-config.yml
+#            group: ${nacos.group}
+#            refresh: true
+#          - data-id: topic-config.yml
+#            group: ${nacos.group}
+#            refresh: true
+#          - data-id: common-config.yml
+#            group: ${nacos.group}
+#            refresh: true

@@ -1,0 +1,91 @@
+spring:
+  # sharding-jdbc配置
+  shardingsphere:
+    # 是否开启SQL显示
+    props:
+      sql:
+        show: true
+    # ====================== 数据源配置 ======================
+    datasource:
+      names: ds-master-0,ds-slave-0-1
+      # ====================== 配置第1个主从库 ======================
+      # 主库1
+      ds-master-0:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://192.168.192.192:3306/my_project?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false # MySQL在高版本需要指明是否进行SSL连接 解决则加上 &useSSL=false
+        username: root
+        password: 55555wyt
+      # 主库1-从库1
+      ds-slave-0-1:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://192.168.192.193:3306/my_project?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false # MySQL在高版本需要指明是否进行SSL连接 解决则加上 &useSSL=false
+        username: root
+        password: 55555wyt
+      # ====================== 配置第2个主从库 ======================
+
+    sharding:
+      # ====================== 读写分离配置 ======================
+      master-slave-rules:
+        ds-master-0:
+          # 主库
+          masterDataSourceName: ds-master-0
+          # 从库
+          slaveDataSourceNames:
+            - ds-slave-0-1
+          # 从库查询数据的负载均衡算法 目前有2种算法 round_robin（轮询）和 random（随机）
+          # 算法接口 org.apache.shardingsphere.spi.masterslave.MasterSlaveLoadBalanceAlgorithm
+          # 实现类 RandomMasterSlaveLoadBalanceAlgorithm 和 RoundRobinMasterSlaveLoadBalanceAlgorithm
+          loadBalanceAlgorithmType: ROUND_ROBIN
+
+          # ====================== 分库分表配置 ======================
+      tables:
+        #要分的表名称
+        system_log:
+          actual-data-nodes: ds-master-0.system_log_$->{0..1}
+          #         ======分片字段设置自增=====
+          key-generator:
+            column: log_id
+            type: SNOWFLAKE
+            props:
+              worker:
+                id: 1
+            # ====== 分库 ======
+            #          database-strategy:
+            #            inline:
+            #              sharding-column: user_id # 添加数据分库字段(根据字段插入数据到哪个库 ex：user_id)
+            #              algorithm-expression: ds-master-$->{user_id % 2} # 根据user_id取模拆分到不同的库中
+            # ====== 分表 ======
+          table-strategy:
+            inline:
+              sharding-column: log_id   # 添加数据分表字段(根据字段插入数据到哪个表 ex：sex)
+              algorithm-expression: system_log_$->{log_id % 2} # 分片算法表达式 => 根据用户性别取模拆分到不同的表中
+      # 指定公共表
+      broadcast-tables: test
+
+  # ========分库分表启动报错解决方法==========
+  main:
+    allow-bean-definition-overriding: true
+
+  #================动态数据源==================
+  datasource:
+    dynamic:
+      primary: master # 设置默认的数据源或者数据源组,默认值即为master
+      strict: false   # 严格匹配数据源,默认false. true未匹配到指定数据源时抛异常,false使用默认数据源
+      datasource:
+        master:
+          url: jdbc:mysql://192.168.192.191:3306/my_project_191?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false # MySQL在高版本需要指明是否进行SSL连接 解决则加上 &useSSL=false
+          username: root
+          password: 55555wyt
+          driver-class-name: com.mysql.jdbc.Driver
+
+
+#mybatis plus 设置
+mybatis-plus:
+  mapper-locations: classpath:/mappers/*.xml
+  configuration:
+    # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 返回类型为Map,显示null对应的字段
+    call-setters-on-nulls: true

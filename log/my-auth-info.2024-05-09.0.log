@@ -1,0 +1,725 @@
+2024-05-09 22:45:50 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-09 22:45:51 [restartedMain] INFO  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Loading nacos data, dataId: 'my-auth.yml', group: 'DEFAULT_GROUP'
+2024-05-09 22:45:51 [restartedMain] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-my-auth-dev.yml'}, BootstrapPropertySource {name='bootstrapProperties-my-auth.yml'}]
+2024-05-09 22:45:51 [restartedMain] INFO  com.www.MyAuthApplication - The following profiles are active: dev
+2024-05-09 22:45:52 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2024-05-09 22:45:52 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2024-05-09 22:45:52 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.www]' package. Please check your configuration.
+2024-05-09 22:45:52 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2024-05-09 22:45:52 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.www]' package. Please check your configuration.
+2024-05-09 22:45:52 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=48f88f40-b418-32cb-a472-5ea47de59232
+2024-05-09 22:45:52 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-09 22:45:53 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-05-09 22:45:53 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-09 22:45:53 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-09 22:45:53 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2024-05-09 22:45:53 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.32] using APR version [1.7.0].
+2024-05-09 22:45:53 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2024-05-09 22:45:53 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-05-09 22:45:53 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1n  15 Mar 2022]
+2024-05-09 22:45:53 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/auth] - Initializing Spring embedded WebApplicationContext
+2024-05-09 22:45:53 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2016 ms
+2024-05-09 22:45:53 [restartedMain] ERROR o.s.boot.web.embedded.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthEndpoint' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthContributorRegistry' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributorRegistry]: Factory method 'healthContributorRegistry' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbHealthContributor' defined in class path resource [org/springframework/boot/actuate/autoconfigure/jdbc/DataSourceHealthContributorAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributor]: Factory method 'dbHealthContributor' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2024-05-09 22:45:53 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-05-09 22:45:53 [restartedMain] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [auth] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+2024-05-09 22:45:53 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2024-05-09 22:45:53 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-05-09 22:45:53 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2024-05-09 22:52:33 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-09 22:52:34 [restartedMain] INFO  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Loading nacos data, dataId: 'datasource.yml', group: 'DEFAULT_GROUP'
+2024-05-09 22:52:34 [restartedMain] INFO  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Loading nacos data, dataId: 'my-auth.yml', group: 'DEFAULT_GROUP'
+2024-05-09 22:52:34 [restartedMain] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-my-auth-dev.yml'}, BootstrapPropertySource {name='bootstrapProperties-my-auth.yml'}, BootstrapPropertySource {name='bootstrapProperties-datasource.yml'}]
+2024-05-09 22:52:34 [restartedMain] INFO  com.www.MyAuthApplication - The following profiles are active: dev
+2024-05-09 22:52:34 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2024-05-09 22:52:34 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2024-05-09 22:52:34 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.www]' package. Please check your configuration.
+2024-05-09 22:52:35 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2024-05-09 22:52:35 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.www]' package. Please check your configuration.
+2024-05-09 22:52:35 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=48f88f40-b418-32cb-a472-5ea47de59232
+2024-05-09 22:52:35 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-09 22:52:35 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-05-09 22:52:35 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-09 22:52:35 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-09 22:52:35 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2024-05-09 22:52:35 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.32] using APR version [1.7.0].
+2024-05-09 22:52:35 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2024-05-09 22:52:35 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-05-09 22:52:35 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1n  15 Mar 2022]
+2024-05-09 22:52:35 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/auth] - Initializing Spring embedded WebApplicationContext
+2024-05-09 22:52:35 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1675 ms
+2024-05-09 22:52:36 [restartedMain] ERROR o.s.boot.web.embedded.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthEndpoint' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthContributorRegistry' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributorRegistry]: Factory method 'healthContributorRegistry' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbHealthContributor' defined in class path resource [org/springframework/boot/actuate/autoconfigure/jdbc/DataSourceHealthContributorAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributor]: Factory method 'dbHealthContributor' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+2024-05-09 22:52:36 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-05-09 22:52:36 [restartedMain] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [auth] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+2024-05-09 22:52:36 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2024-05-09 22:52:36 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-05-09 22:52:36 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.www.MyAuthApplication.main(MyAuthApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:126)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:88)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:438)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:191)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'servletEndpointRegistrar' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthEndpoint' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthContributorRegistry' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributorRegistry]: Factory method 'healthContributorRegistry' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbHealthContributor' defined in class path resource [org/springframework/boot/actuate/autoconfigure/jdbc/DataSourceHealthContributorAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributor]: Factory method 'dbHealthContributor' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$184/1916744160.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:202)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:96)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:85)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:253)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:227)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext$$Lambda$411/733826081.onStartup(Unknown Source)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5135)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:459)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:107)
+	... 18 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.ServletEndpointRegistrar]: Factory method 'servletEndpointRegistrar' threw exception; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthEndpoint' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthContributorRegistry' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributorRegistry]: Factory method 'healthContributorRegistry' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbHealthContributor' defined in class path resource [org/springframework/boot/actuate/autoconfigure/jdbc/DataSourceHealthContributorAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributor]: Factory method 'dbHealthContributor' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 62 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthEndpoint' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthContributorRegistry' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributorRegistry]: Factory method 'healthContributorRegistry' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbHealthContributor' defined in class path resource [org/springframework/boot/actuate/autoconfigure/jdbc/DataSourceHealthContributorAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributor]: Factory method 'dbHealthContributor' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:539)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$184/1916744160.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.createEndpointBean(EndpointDiscoverer.java:143)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.createEndpointBeans(EndpointDiscoverer.java:133)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.discoverEndpoints(EndpointDiscoverer.java:122)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.getEndpoints(EndpointDiscoverer.java:116)
+	at org.springframework.boot.actuate.autoconfigure.endpoint.web.ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.servletEndpointRegistrar(ServletEndpointManagementContextConfiguration.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 63 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthContributorRegistry' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributorRegistry]: Factory method 'healthContributorRegistry' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbHealthContributor' defined in class path resource [org/springframework/boot/actuate/autoconfigure/jdbc/DataSourceHealthContributorAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributor]: Factory method 'dbHealthContributor' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$184/1916744160.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
+	... 84 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributorRegistry]: Factory method 'healthContributorRegistry' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbHealthContributor' defined in class path resource [org/springframework/boot/actuate/autoconfigure/jdbc/DataSourceHealthContributorAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributor]: Factory method 'dbHealthContributor' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 99 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbHealthContributor' defined in class path resource [org/springframework/boot/actuate/autoconfigure/jdbc/DataSourceHealthContributorAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributor]: Factory method 'dbHealthContributor' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$184/1916744160.getObject(Unknown Source)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:617)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:605)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1242)
+	at org.springframework.boot.actuate.autoconfigure.health.HealthEndpointConfiguration.healthContributorRegistry(HealthEndpointConfiguration.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 100 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.health.HealthContributor]: Factory method 'dbHealthContributor' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 119 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:359)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$485/642861484.getObject(Unknown Source)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:186)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:356)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.zaxxer.hikari.HikariDataSource$$EnhancerBySpringCGLIB$$64562a46.getConnectionTestQuery(<generated>)
+	at org.springframework.boot.jdbc.metadata.HikariDataSourcePoolMetadata.getValidationQuery(HikariDataSourcePoolMetadata.java:74)
+	at org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthContributorAutoConfiguration.getValidationQuery(DataSourceHealthContributorAutoConfiguration.java:97)
+	at org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthContributorAutoConfiguration.createIndicator(DataSourceHealthContributorAutoConfiguration.java:92)
+	at org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthContributorAutoConfiguration.createIndicator(DataSourceHealthContributorAutoConfiguration.java:59)
+	at org.springframework.boot.actuate.autoconfigure.health.AbstractCompositeHealthContributorConfiguration.createContributor(AbstractCompositeHealthContributorConfiguration.java:54)
+	at org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthContributorAutoConfiguration.dbHealthContributor(DataSourceHealthContributorAutoConfiguration.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 120 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651)
+	... 145 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:94)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:222)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.initializeDataSourceBuilder(DataSourceProperties.java:174)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:43)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 146 common frames omitted
+2024-05-09 22:55:45 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-09 22:55:46 [restartedMain] INFO  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Loading nacos data, dataId: 'datasource.yml', group: 'DEFAULT_GROUP'
+2024-05-09 22:55:46 [restartedMain] INFO  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Loading nacos data, dataId: 'my-auth.yml', group: 'DEFAULT_GROUP'
+2024-05-09 22:55:46 [restartedMain] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-my-auth-dev.yml'}, BootstrapPropertySource {name='bootstrapProperties-my-auth.yml'}, BootstrapPropertySource {name='bootstrapProperties-datasource.yml'}]
+2024-05-09 22:55:46 [restartedMain] INFO  com.www.MyAuthApplication - The following profiles are active: dev
+2024-05-09 22:55:47 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2024-05-09 22:55:47 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2024-05-09 22:55:47 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.www]' package. Please check your configuration.
+2024-05-09 22:55:47 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2024-05-09 22:55:47 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.www]' package. Please check your configuration.
+2024-05-09 22:55:47 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=48f88f40-b418-32cb-a472-5ea47de59232
+2024-05-09 22:55:47 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-09 22:55:48 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-05-09 22:55:48 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-09 22:55:48 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-09 22:55:48 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2024-05-09 22:55:48 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.32] using APR version [1.7.0].
+2024-05-09 22:55:48 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2024-05-09 22:55:48 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-05-09 22:55:48 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1n  15 Mar 2022]
+2024-05-09 22:55:48 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/auth] - Initializing Spring embedded WebApplicationContext
+2024-05-09 22:55:48 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1892 ms
+2024-05-09 22:55:48 [restartedMain] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2024-05-09 22:55:48 [restartedMain] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+2024-05-09 22:55:48 [restartedMain] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2024-05-09 22:56:08 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7191f9b9, org.springframework.security.web.context.SecurityContextPersistenceFilter@6097d6c3, org.springframework.security.web.header.HeaderWriterFilter@294806b2, org.springframework.security.web.authentication.logout.LogoutFilter@76bc5337, com.www.security.filter.GlobalAuthenticationFilter@78cdaf4f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@649fd6dc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d44ad1e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4aa5f332, org.springframework.security.web.session.SessionManagementFilter@49034e42, org.springframework.security.web.access.ExceptionTranslationFilter@5dd2f1f8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7130687a]
+2024-05-09 22:56:08 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-05-09 22:56:08 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-09 22:56:08 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-05-09 22:56:08 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-09 22:56:08 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-09 22:56:08 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2024-05-09 22:56:09 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2024-05-09 22:56:09 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-05-09 22:56:09 [restartedMain] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 19 endpoint(s) beneath base path '/actuator'
+2024-05-09 22:56:10 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.authServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'security.token.expire' in value "${security.token.expire}"
+2024-05-09 22:56:10 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2024-05-09 22:56:10 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-09 22:56:10 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-05-09 22:56:10 [restartedMain] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [auth] appears to have started a thread named [com.alibaba.nacos.naming.client.listener] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+ com.alibaba.nacos.client.naming.core.EventDispatcher$Notifier.run(EventDispatcher.java:114)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+2024-05-09 22:56:10 [restartedMain] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [auth] appears to have started a thread named [com.alibaba.nacos.naming.failover] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+2024-05-09 22:56:10 [restartedMain] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [auth] appears to have started a thread named [com.alibaba.nacos.naming.push.receiver] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.net.DualStackPlainDatagramSocketImpl.socketReceiveOrPeekData(Native Method)
+ java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:120)
+ java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:144)
+ java.net.DatagramSocket.receive(DatagramSocket.java:812)
+ com.alibaba.nacos.client.naming.core.PushReceiver.run(PushReceiver.java:73)
+ java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+ java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+ java.util.concurrent.FutureTask.run(FutureTask.java)
+ java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+ java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ java.lang.Thread.run(Thread.java:745)
+2024-05-09 22:56:10 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-05-09 22:56:10 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.authServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'security.token.expire' in value "${security.token.expire}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:359)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$$Lambda$485/841656094.getObject(Unknown Source)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:186)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:356)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.cloud.context.scope.refresh.RefreshScope.eagerlyInitialize(RefreshScope.java:127)
+	at org.springframework.cloud.context.scope.refresh.RefreshScope.start(RefreshScope.java:118)
+	at org.springframework.cloud.context.scope.refresh.RefreshScope.onApplicationEvent(RefreshScope.java:112)
+	at org.springframework.cloud.context.scope.refresh.RefreshScope.onApplicationEvent(RefreshScope.java:66)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:897)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.www.MyAuthApplication.main(MyAuthApplication.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'security.token.expire' in value "${security.token.expire}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$$Lambda$223/1050658219.resolveStringValue(Unknown Source)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:908)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1228)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 34 common frames omitted
+2024-05-09 22:59:03 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-09 22:59:04 [restartedMain] INFO  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Loading nacos data, dataId: 'datasource.yml', group: 'DEFAULT_GROUP'
+2024-05-09 22:59:04 [restartedMain] INFO  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Loading nacos data, dataId: 'my-auth.yml', group: 'DEFAULT_GROUP'
+2024-05-09 22:59:04 [restartedMain] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-my-auth-dev.yml'}, BootstrapPropertySource {name='bootstrapProperties-my-auth.yml'}, BootstrapPropertySource {name='bootstrapProperties-datasource.yml'}]
+2024-05-09 22:59:04 [restartedMain] INFO  com.www.MyAuthApplication - The following profiles are active: dev
+2024-05-09 22:59:04 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2024-05-09 22:59:04 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2024-05-09 22:59:05 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.www]' package. Please check your configuration.
+2024-05-09 22:59:05 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2024-05-09 22:59:05 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.www]' package. Please check your configuration.
+2024-05-09 22:59:05 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=48f88f40-b418-32cb-a472-5ea47de59232
+2024-05-09 22:59:05 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-09 22:59:05 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-05-09 22:59:05 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-09 22:59:05 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-09 22:59:05 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2024-05-09 22:59:05 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.32] using APR version [1.7.0].
+2024-05-09 22:59:05 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2024-05-09 22:59:05 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-05-09 22:59:05 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1n  15 Mar 2022]
+2024-05-09 22:59:06 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/auth] - Initializing Spring embedded WebApplicationContext
+2024-05-09 22:59:06 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1753 ms
+2024-05-09 22:59:06 [restartedMain] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2024-05-09 22:59:06 [restartedMain] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+2024-05-09 22:59:06 [restartedMain] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2024-05-09 22:59:23 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b5bc8d9, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a74f95b, org.springframework.security.web.header.HeaderWriterFilter@5394d03e, org.springframework.security.web.authentication.logout.LogoutFilter@3165957, com.www.security.filter.GlobalAuthenticationFilter@752c5ac5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64b6b2da, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40f4c3cd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27c7bd4e, org.springframework.security.web.session.SessionManagementFilter@298fe888, org.springframework.security.web.access.ExceptionTranslationFilter@4516eb65, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@730251b5]
+2024-05-09 22:59:23 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-05-09 22:59:23 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-09 22:59:23 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-05-09 22:59:23 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-09 22:59:23 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-09 22:59:23 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2024-05-09 22:59:24 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2024-05-09 22:59:24 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-05-09 22:59:25 [restartedMain] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 19 endpoint(s) beneath base path '/actuator'
+2024-05-09 22:59:25 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2024-05-09 22:59:25 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/auth'
+2024-05-09 22:59:25 [restartedMain] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.237.1","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8081,"scheduled":false,"serviceName":"DEFAULT_GROUP@@my-auth","stopped":false,"weight":1} to beat map.
+2024-05-09 22:59:25 [restartedMain] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] 5fe6a24d-e047-4587-b371-ff704a8cba65 registering service DEFAULT_GROUP@@my-auth with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.237.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8081,"weight":1}
+2024-05-09 22:59:25 [restartedMain] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, my-auth 192.168.237.1:8081 register finished
+2024-05-09 22:59:25 [restartedMain] INFO  com.www.MyAuthApplication - Started MyAuthApplication in 23.012 seconds (JVM running for 23.995)
+2024-05-09 22:59:25 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [subscribe] datasource.yml+DEFAULT_GROUP+5fe6a24d-e047-4587-b371-ff704a8cba65
+2024-05-09 22:59:25 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [add-listener] ok, tenant=5fe6a24d-e047-4587-b371-ff704a8cba65, dataId=datasource.yml, group=DEFAULT_GROUP, cnt=1
+2024-05-09 22:59:25 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [subscribe] my-auth.yml+DEFAULT_GROUP+5fe6a24d-e047-4587-b371-ff704a8cba65
+2024-05-09 22:59:25 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [add-listener] ok, tenant=5fe6a24d-e047-4587-b371-ff704a8cba65, dataId=my-auth.yml, group=DEFAULT_GROUP, cnt=1
+2024-05-09 22:59:25 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [subscribe] my-auth-dev.yml+DEFAULT_GROUP+5fe6a24d-e047-4587-b371-ff704a8cba65
+2024-05-09 22:59:25 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [add-listener] ok, tenant=5fe6a24d-e047-4587-b371-ff704a8cba65, dataId=my-auth-dev.yml, group=DEFAULT_GROUP, cnt=1
+2024-05-09 22:59:26 [RMI TCP Connection(1)-192.168.192.2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/auth] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09 22:59:26 [RMI TCP Connection(1)-192.168.192.2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-09 22:59:26 [RMI TCP Connection(1)-192.168.192.2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2024-05-09 22:59:26 [RMI TCP Connection(2)-192.168.192.2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-09 22:59:26 [RMI TCP Connection(2)-192.168.192.2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-09 23:00:45 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2024-05-09 23:00:45 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2024-05-09 23:00:45 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@my-auth:192.168.237.1:8081 from beat map.
+2024-05-09 23:00:45 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] 5fe6a24d-e047-4587-b371-ff704a8cba65 deregistering service DEFAULT_GROUP@@my-auth with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.237.1","ipDeleteTimeout":30000,"metadata":{},"port":8081,"weight":1}
+2024-05-09 23:00:45 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2024-05-09 23:00:45 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-09 23:00:45 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-09 23:00:45 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-09 23:00:51 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-09 23:00:51 [restartedMain] INFO  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Loading nacos data, dataId: 'datasource.yml', group: 'DEFAULT_GROUP'
+2024-05-09 23:00:51 [restartedMain] INFO  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Loading nacos data, dataId: 'my-auth.yml', group: 'DEFAULT_GROUP'
+2024-05-09 23:00:51 [restartedMain] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-my-auth-dev.yml'}, BootstrapPropertySource {name='bootstrapProperties-my-auth.yml'}, BootstrapPropertySource {name='bootstrapProperties-datasource.yml'}]
+2024-05-09 23:00:51 [restartedMain] INFO  com.www.MyAuthApplication - The following profiles are active: dev
+2024-05-09 23:00:52 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2024-05-09 23:00:52 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2024-05-09 23:00:52 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.www]' package. Please check your configuration.
+2024-05-09 23:00:53 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2024-05-09 23:00:53 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.www]' package. Please check your configuration.
+2024-05-09 23:00:53 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=aad6b37e-ab20-32e0-bf03-4fbce3ad51e6
+2024-05-09 23:00:53 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-09 23:00:53 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-05-09 23:00:53 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-09 23:00:53 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-09 23:00:53 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2024-05-09 23:00:53 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.32] using APR version [1.7.0].
+2024-05-09 23:00:53 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2024-05-09 23:00:53 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-05-09 23:00:53 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1n  15 Mar 2022]
+2024-05-09 23:00:54 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/auth] - Initializing Spring embedded WebApplicationContext
+2024-05-09 23:00:54 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2146 ms
+2024-05-09 23:00:54 [restartedMain] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2024-05-09 23:00:54 [restartedMain] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+2024-05-09 23:00:54 [restartedMain] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2024-05-09 23:00:55 [restartedMain] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 19 endpoint(s) beneath base path '/actuator'
+2024-05-09 23:01:06 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f505990, org.springframework.security.web.context.SecurityContextPersistenceFilter@6c2978ae, org.springframework.security.web.header.HeaderWriterFilter@2994e31, org.springframework.security.web.authentication.logout.LogoutFilter@7807a872, com.www.security.filter.GlobalAuthenticationFilter@4277f4a4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@396181af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1edd75d1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f51e30f, org.springframework.security.web.session.SessionManagementFilter@6328776a, org.springframework.security.web.access.ExceptionTranslationFilter@10634dab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7934d6c7]
+2024-05-09 23:01:06 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-05-09 23:01:06 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-05-09 23:01:06 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-09 23:01:06 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-05-09 23:01:06 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-09 23:01:06 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-09 23:01:06 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-05-09 23:01:06 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2024-05-09 23:01:07 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2024-05-09 23:01:08 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-05-09 23:01:08 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-05-09 23:01:08 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-05-09 23:01:08 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2024-05-09 23:01:08 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/auth'
+2024-05-09 23:01:08 [restartedMain] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.237.1","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8081,"scheduled":false,"serviceName":"DEFAULT_GROUP@@my-auth","stopped":false,"weight":1} to beat map.
+2024-05-09 23:01:08 [restartedMain] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] 5fe6a24d-e047-4587-b371-ff704a8cba65 registering service DEFAULT_GROUP@@my-auth with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.237.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8081,"weight":1}
+2024-05-09 23:01:08 [restartedMain] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, my-auth 192.168.237.1:8081 register finished
+2024-05-09 23:01:08 [restartedMain] INFO  com.www.MyAuthApplication - Started MyAuthApplication in 18.545 seconds (JVM running for 19.554)
+2024-05-09 23:01:08 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [subscribe] datasource.yml+DEFAULT_GROUP+5fe6a24d-e047-4587-b371-ff704a8cba65
+2024-05-09 23:01:08 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [add-listener] ok, tenant=5fe6a24d-e047-4587-b371-ff704a8cba65, dataId=datasource.yml, group=DEFAULT_GROUP, cnt=1
+2024-05-09 23:01:08 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [subscribe] my-auth.yml+DEFAULT_GROUP+5fe6a24d-e047-4587-b371-ff704a8cba65
+2024-05-09 23:01:08 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [add-listener] ok, tenant=5fe6a24d-e047-4587-b371-ff704a8cba65, dataId=my-auth.yml, group=DEFAULT_GROUP, cnt=1
+2024-05-09 23:01:08 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [subscribe] my-auth-dev.yml+DEFAULT_GROUP+5fe6a24d-e047-4587-b371-ff704a8cba65
+2024-05-09 23:01:08 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [add-listener] ok, tenant=5fe6a24d-e047-4587-b371-ff704a8cba65, dataId=my-auth-dev.yml, group=DEFAULT_GROUP, cnt=1
+2024-05-09 23:01:09 [RMI TCP Connection(4)-192.168.192.2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/auth] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09 23:01:09 [RMI TCP Connection(4)-192.168.192.2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-09 23:01:09 [RMI TCP Connection(4)-192.168.192.2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2024-05-09 23:01:09 [RMI TCP Connection(3)-192.168.192.2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-09 23:01:09 [RMI TCP Connection(3)-192.168.192.2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-09 23:06:42 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2024-05-09 23:06:42 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2024-05-09 23:06:42 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@my-auth:192.168.237.1:8081 from beat map.
+2024-05-09 23:06:42 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] 5fe6a24d-e047-4587-b371-ff704a8cba65 deregistering service DEFAULT_GROUP@@my-auth with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.237.1","ipDeleteTimeout":30000,"metadata":{},"port":8081,"weight":1}
+2024-05-09 23:06:42 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2024-05-09 23:06:42 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-09 23:06:42 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-09 23:06:42 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-09 23:06:48 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-09 23:06:49 [restartedMain] INFO  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Loading nacos data, dataId: 'datasource.yml', group: 'DEFAULT_GROUP'
+2024-05-09 23:06:49 [restartedMain] INFO  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Loading nacos data, dataId: 'my-auth.yml', group: 'DEFAULT_GROUP'
+2024-05-09 23:06:49 [restartedMain] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-my-auth-dev.yml'}, BootstrapPropertySource {name='bootstrapProperties-my-auth.yml'}, BootstrapPropertySource {name='bootstrapProperties-datasource.yml'}]
+2024-05-09 23:06:49 [restartedMain] INFO  com.www.MyAuthApplication - The following profiles are active: dev
+2024-05-09 23:06:50 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2024-05-09 23:06:50 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2024-05-09 23:06:50 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.www]' package. Please check your configuration.
+2024-05-09 23:06:50 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2024-05-09 23:06:50 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.www]' package. Please check your configuration.
+2024-05-09 23:06:50 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=aad6b37e-ab20-32e0-bf03-4fbce3ad51e6
+2024-05-09 23:06:50 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-09 23:06:51 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-05-09 23:06:51 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-09 23:06:51 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-09 23:06:51 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2024-05-09 23:06:51 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.32] using APR version [1.7.0].
+2024-05-09 23:06:51 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2024-05-09 23:06:51 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-05-09 23:06:51 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1n  15 Mar 2022]
+2024-05-09 23:06:51 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/auth] - Initializing Spring embedded WebApplicationContext
+2024-05-09 23:06:51 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1940 ms
+2024-05-09 23:06:52 [restartedMain] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2024-05-09 23:06:52 [restartedMain] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+2024-05-09 23:06:52 [restartedMain] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2024-05-09 23:06:52 [restartedMain] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 19 endpoint(s) beneath base path '/actuator'
+2024-05-09 23:06:55 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@274d445c, org.springframework.security.web.context.SecurityContextPersistenceFilter@53875136, org.springframework.security.web.header.HeaderWriterFilter@3b6dd425, org.springframework.security.web.authentication.logout.LogoutFilter@59bd9bef, com.www.security.filter.GlobalAuthenticationFilter@3a6293bc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d440691, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@263f275d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ced1822, org.springframework.security.web.session.SessionManagementFilter@500879b5, org.springframework.security.web.access.ExceptionTranslationFilter@1c56c0fa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7656d5cf]
+2024-05-09 23:06:55 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-05-09 23:06:55 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-05-09 23:06:55 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-09 23:06:55 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-05-09 23:06:55 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-09 23:06:55 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-09 23:06:55 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-05-09 23:06:55 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2024-05-09 23:06:56 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2024-05-09 23:06:57 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-05-09 23:06:57 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-05-09 23:06:57 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-05-09 23:06:57 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2024-05-09 23:06:57 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/auth'
+2024-05-09 23:06:57 [restartedMain] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.237.1","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8081,"scheduled":false,"serviceName":"DEFAULT_GROUP@@my-auth","stopped":false,"weight":1} to beat map.
+2024-05-09 23:06:57 [restartedMain] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] 5fe6a24d-e047-4587-b371-ff704a8cba65 registering service DEFAULT_GROUP@@my-auth with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.237.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8081,"weight":1}
+2024-05-09 23:06:57 [restartedMain] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, my-auth 192.168.237.1:8081 register finished
+2024-05-09 23:06:57 [restartedMain] INFO  com.www.MyAuthApplication - Started MyAuthApplication in 9.98 seconds (JVM running for 11.052)
+2024-05-09 23:06:57 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [subscribe] datasource.yml+DEFAULT_GROUP+5fe6a24d-e047-4587-b371-ff704a8cba65
+2024-05-09 23:06:57 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [add-listener] ok, tenant=5fe6a24d-e047-4587-b371-ff704a8cba65, dataId=datasource.yml, group=DEFAULT_GROUP, cnt=1
+2024-05-09 23:06:57 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [subscribe] my-auth.yml+DEFAULT_GROUP+5fe6a24d-e047-4587-b371-ff704a8cba65
+2024-05-09 23:06:57 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [add-listener] ok, tenant=5fe6a24d-e047-4587-b371-ff704a8cba65, dataId=my-auth.yml, group=DEFAULT_GROUP, cnt=1
+2024-05-09 23:06:57 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [subscribe] my-auth-dev.yml+DEFAULT_GROUP+5fe6a24d-e047-4587-b371-ff704a8cba65
+2024-05-09 23:06:57 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [add-listener] ok, tenant=5fe6a24d-e047-4587-b371-ff704a8cba65, dataId=my-auth-dev.yml, group=DEFAULT_GROUP, cnt=1
+2024-05-09 23:06:58 [RMI TCP Connection(1)-192.168.192.2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-09 23:06:58 [RMI TCP Connection(3)-192.168.192.2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/auth] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09 23:06:58 [RMI TCP Connection(3)-192.168.192.2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-09 23:06:58 [RMI TCP Connection(3)-192.168.192.2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2024-05-09 23:06:58 [RMI TCP Connection(1)-192.168.192.2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-09 23:07:52 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2024-05-09 23:07:52 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2024-05-09 23:07:52 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@my-auth:192.168.237.1:8081 from beat map.
+2024-05-09 23:07:52 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] 5fe6a24d-e047-4587-b371-ff704a8cba65 deregistering service DEFAULT_GROUP@@my-auth with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.237.1","ipDeleteTimeout":30000,"metadata":{},"port":8081,"weight":1}
+2024-05-09 23:07:52 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2024-05-09 23:07:52 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-09 23:07:52 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-09 23:07:52 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-09 23:07:58 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-09 23:07:59 [restartedMain] INFO  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Loading nacos data, dataId: 'datasource.yml', group: 'DEFAULT_GROUP'
+2024-05-09 23:07:59 [restartedMain] INFO  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Loading nacos data, dataId: 'my-auth.yml', group: 'DEFAULT_GROUP'
+2024-05-09 23:07:59 [restartedMain] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-my-auth-dev.yml'}, BootstrapPropertySource {name='bootstrapProperties-my-auth.yml'}, BootstrapPropertySource {name='bootstrapProperties-datasource.yml'}]
+2024-05-09 23:07:59 [restartedMain] INFO  com.www.MyAuthApplication - The following profiles are active: dev
+2024-05-09 23:07:59 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2024-05-09 23:07:59 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2024-05-09 23:08:00 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.www]' package. Please check your configuration.
+2024-05-09 23:08:00 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2024-05-09 23:08:00 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.www]' package. Please check your configuration.
+2024-05-09 23:08:00 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=aad6b37e-ab20-32e0-bf03-4fbce3ad51e6
+2024-05-09 23:08:00 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-09 23:08:01 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-05-09 23:08:01 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-09 23:08:01 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-09 23:08:01 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2024-05-09 23:08:01 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.32] using APR version [1.7.0].
+2024-05-09 23:08:01 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2024-05-09 23:08:01 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-05-09 23:08:01 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1n  15 Mar 2022]
+2024-05-09 23:08:01 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/auth] - Initializing Spring embedded WebApplicationContext
+2024-05-09 23:08:01 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2029 ms
+2024-05-09 23:08:01 [restartedMain] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2024-05-09 23:08:01 [restartedMain] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+2024-05-09 23:08:01 [restartedMain] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2024-05-09 23:08:02 [restartedMain] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 19 endpoint(s) beneath base path '/actuator'
+2024-05-09 23:08:04 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d04c4d4, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f0684e0, org.springframework.security.web.header.HeaderWriterFilter@40cece24, org.springframework.security.web.authentication.logout.LogoutFilter@4054f83a, com.www.security.filter.GlobalAuthenticationFilter@96a57e3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@474c7177, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4eef5b83, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54d423c7, org.springframework.security.web.session.SessionManagementFilter@2dc086b5, org.springframework.security.web.access.ExceptionTranslationFilter@5f64a747, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2fe27a16]
+2024-05-09 23:08:04 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-05-09 23:08:04 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-05-09 23:08:04 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-09 23:08:04 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-05-09 23:08:04 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-09 23:08:05 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-09 23:08:05 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-05-09 23:08:05 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2024-05-09 23:08:05 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2024-05-09 23:08:06 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-05-09 23:08:06 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-05-09 23:08:06 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-05-09 23:08:06 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2024-05-09 23:08:06 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/auth'
+2024-05-09 23:08:06 [restartedMain] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.237.1","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8081,"scheduled":false,"serviceName":"DEFAULT_GROUP@@my-auth","stopped":false,"weight":1} to beat map.
+2024-05-09 23:08:06 [restartedMain] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] 5fe6a24d-e047-4587-b371-ff704a8cba65 registering service DEFAULT_GROUP@@my-auth with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.237.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8081,"weight":1}
+2024-05-09 23:08:07 [restartedMain] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, my-auth 192.168.237.1:8081 register finished
+2024-05-09 23:08:07 [restartedMain] INFO  com.www.MyAuthApplication - Started MyAuthApplication in 9.83 seconds (JVM running for 10.911)
+2024-05-09 23:08:07 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [subscribe] datasource.yml+DEFAULT_GROUP+5fe6a24d-e047-4587-b371-ff704a8cba65
+2024-05-09 23:08:07 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [add-listener] ok, tenant=5fe6a24d-e047-4587-b371-ff704a8cba65, dataId=datasource.yml, group=DEFAULT_GROUP, cnt=1
+2024-05-09 23:08:07 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [subscribe] my-auth.yml+DEFAULT_GROUP+5fe6a24d-e047-4587-b371-ff704a8cba65
+2024-05-09 23:08:07 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [add-listener] ok, tenant=5fe6a24d-e047-4587-b371-ff704a8cba65, dataId=my-auth.yml, group=DEFAULT_GROUP, cnt=1
+2024-05-09 23:08:07 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [subscribe] my-auth-dev.yml+DEFAULT_GROUP+5fe6a24d-e047-4587-b371-ff704a8cba65
+2024-05-09 23:08:07 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [add-listener] ok, tenant=5fe6a24d-e047-4587-b371-ff704a8cba65, dataId=my-auth-dev.yml, group=DEFAULT_GROUP, cnt=1
+2024-05-09 23:08:07 [RMI TCP Connection(1)-192.168.192.2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-09 23:08:07 [RMI TCP Connection(1)-192.168.192.2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-09 23:08:07 [RMI TCP Connection(3)-192.168.192.2] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/auth] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09 23:08:07 [RMI TCP Connection(3)-192.168.192.2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-09 23:08:07 [RMI TCP Connection(3)-192.168.192.2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2024-05-09 23:08:18 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2024-05-09 23:08:18 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2024-05-09 23:08:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@my-auth:192.168.237.1:8081 from beat map.
+2024-05-09 23:08:18 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] 5fe6a24d-e047-4587-b371-ff704a8cba65 deregistering service DEFAULT_GROUP@@my-auth with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.237.1","ipDeleteTimeout":30000,"metadata":{},"port":8081,"weight":1}
+2024-05-09 23:08:18 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2024-05-09 23:08:18 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-09 23:08:18 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-09 23:08:18 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-09 23:08:43 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-05-09 23:08:43 [restartedMain] INFO  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Loading nacos data, dataId: 'datasource.yml', group: 'DEFAULT_GROUP'
+2024-05-09 23:08:43 [restartedMain] INFO  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Loading nacos data, dataId: 'my-auth.yml', group: 'DEFAULT_GROUP'
+2024-05-09 23:08:43 [restartedMain] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-my-auth-dev.yml'}, BootstrapPropertySource {name='bootstrapProperties-my-auth.yml'}, BootstrapPropertySource {name='bootstrapProperties-datasource.yml'}]
+2024-05-09 23:08:43 [restartedMain] INFO  com.www.MyAuthApplication - The following profiles are active: dev
+2024-05-09 23:08:44 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2024-05-09 23:08:44 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2024-05-09 23:08:44 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.www]' package. Please check your configuration.
+2024-05-09 23:08:45 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2024-05-09 23:08:45 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.www]' package. Please check your configuration.
+2024-05-09 23:08:45 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=aad6b37e-ab20-32e0-bf03-4fbce3ad51e6
+2024-05-09 23:08:45 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-05-09 23:08:45 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-05-09 23:08:45 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-05-09 23:08:45 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-05-09 23:08:45 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2024-05-09 23:08:45 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.32] using APR version [1.7.0].
+2024-05-09 23:08:45 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2024-05-09 23:08:45 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-05-09 23:08:45 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1n  15 Mar 2022]
+2024-05-09 23:08:45 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/auth] - Initializing Spring embedded WebApplicationContext
+2024-05-09 23:08:45 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2006 ms
+2024-05-09 23:08:46 [restartedMain] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2024-05-09 23:08:46 [restartedMain] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Environment :null
+2024-05-09 23:08:46 [restartedMain] INFO  com.alibaba.nacos.client.naming - initializer namespace from System Property :null
+2024-05-09 23:08:47 [restartedMain] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 19 endpoint(s) beneath base path '/actuator'
+2024-05-09 23:08:49 [restartedMain] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21fcaef, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a2c3052, org.springframework.security.web.header.HeaderWriterFilter@351c48cd, org.springframework.security.web.authentication.logout.LogoutFilter@45db3df2, com.www.security.filter.GlobalAuthenticationFilter@717f4c5b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4266aac7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e01c34c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4da5323b, org.springframework.security.web.session.SessionManagementFilter@361b619f, org.springframework.security.web.access.ExceptionTranslationFilter@494c49e3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77d6d7a5]
+2024-05-09 23:08:49 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-05-09 23:08:49 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-05-09 23:08:49 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-09 23:08:49 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2024-05-09 23:08:49 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2024-05-09 23:08:49 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-09 23:08:49 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-05-09 23:08:49 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2024-05-09 23:08:50 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2024-05-09 23:08:51 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2024-05-09 23:08:51 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2024-05-09 23:08:51 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2024-05-09 23:08:51 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2024-05-09 23:08:51 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/auth'
+2024-05-09 23:08:51 [restartedMain] INFO  com.alibaba.nacos.client.naming - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.237.1","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8081,"scheduled":false,"serviceName":"DEFAULT_GROUP@@my-auth","stopped":false,"weight":1} to beat map.
+2024-05-09 23:08:51 [restartedMain] INFO  com.alibaba.nacos.client.naming - [REGISTER-SERVICE] 5fe6a24d-e047-4587-b371-ff704a8cba65 registering service DEFAULT_GROUP@@my-auth with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.237.1","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8081,"weight":1}
+2024-05-09 23:08:51 [restartedMain] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, my-auth 192.168.237.1:8081 register finished
+2024-05-09 23:08:52 [restartedMain] INFO  com.www.MyAuthApplication - Started MyAuthApplication in 9.868 seconds (JVM running for 10.747)
+2024-05-09 23:08:52 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [subscribe] datasource.yml+DEFAULT_GROUP+5fe6a24d-e047-4587-b371-ff704a8cba65
+2024-05-09 23:08:52 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [add-listener] ok, tenant=5fe6a24d-e047-4587-b371-ff704a8cba65, dataId=datasource.yml, group=DEFAULT_GROUP, cnt=1
+2024-05-09 23:08:52 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [subscribe] my-auth.yml+DEFAULT_GROUP+5fe6a24d-e047-4587-b371-ff704a8cba65
+2024-05-09 23:08:52 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [add-listener] ok, tenant=5fe6a24d-e047-4587-b371-ff704a8cba65, dataId=my-auth.yml, group=DEFAULT_GROUP, cnt=1
+2024-05-09 23:08:52 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [subscribe] my-auth-dev.yml+DEFAULT_GROUP+5fe6a24d-e047-4587-b371-ff704a8cba65
+2024-05-09 23:08:52 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-192.168.237.1_8848-5fe6a24d-e047-4587-b371-ff704a8cba65] [add-listener] ok, tenant=5fe6a24d-e047-4587-b371-ff704a8cba65, dataId=my-auth-dev.yml, group=DEFAULT_GROUP, cnt=1
+2024-05-09 23:08:52 [http-nio-8081-exec-1] INFO  o.a.c.c.ContainerBase.[Tomcat].[localhost].[/auth] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09 23:08:52 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-05-09 23:08:52 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2024-05-09 23:08:56 [RMI TCP Connection(3)-192.168.192.2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-09 23:08:56 [RMI TCP Connection(3)-192.168.192.2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-09 23:11:14 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2024-05-09 23:11:14 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2024-05-09 23:11:14 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [BEAT] removing beat: DEFAULT_GROUP@@my-auth:192.168.237.1:8081 from beat map.
+2024-05-09 23:11:14 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming - [DEREGISTER-SERVICE] 5fe6a24d-e047-4587-b371-ff704a8cba65 deregistering service DEFAULT_GROUP@@my-auth with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.237.1","ipDeleteTimeout":30000,"metadata":{},"port":8081,"weight":1}
+2024-05-09 23:11:14 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2024-05-09 23:11:14 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-09 23:11:15 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-09 23:11:15 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

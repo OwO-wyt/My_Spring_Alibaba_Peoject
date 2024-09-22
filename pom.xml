@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.www</groupId>
+    <artifactId>My_Spring_Alibaba_Peoject</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>My_Gateway</module>
+        <module>My_Auth</module>
+        <module>My_Log</module>
+        <module>My_Kafka_Provider</module>
+        <module>My_Kafka_Consumer</module>
+        <module>My_Business_01</module>
+        <module>My_Common</module>
+    </modules>
+
+    <!--统一管理jar包版本-->
+    <properties>
+        <evn>prod</evn>
+        <package-prefix>My_Spring_Alibaba_Peoject</package-prefix>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+        <!-- Spring Projects -->
+        <spring-boot.version>2.2.2.RELEASE</spring-boot.version>
+        <spring-cloud.version>Hoxton.SR1</spring-cloud.version>
+        <spring-cloud-alibaba.verion>2.1.0.RELEASE</spring-cloud-alibaba.verion>
+        <alibaba.cloudapi.version>1.0.4</alibaba.cloudapi.version>
+        <configuration.processor.version>2.3.0.RELEASE</configuration.processor.version>
+        <!-- Nacos -->
+        <nacos.version>2.1.0.RELEASE</nacos.version>
+        <!-- Gateway -->
+        <gateway.version>2.1.2.RELEASE</gateway.version>
+        <!-- Sentinel -->
+        <sentinel.version>2.1.0.RELEASE</sentinel.version>
+        <sentinel-datasource-nacos.version>1.6.1</sentinel-datasource-nacos.version>
+        <!-- OpenFeign -->
+        <fegin.version>2.2.1.RELEASE</fegin.version>
+        <!-- Redis -->
+        <redis.version>2.2.2.RELEASE</redis.version>
+        <!-- redisson -->
+        <redisson.version>3.14.0</redisson.version>
+
+        <!-- Kafka -->
+        <kafka.version>2.3.4.RELEASE</kafka.version>
+        <!-- Tools -->
+        <lombok.version>1.18.10</lombok.version>
+        <!-- mybatisPlus 和 代生成 -->
+        <mybatis-plus.version>3.3.2</mybatis-plus.version>
+        <!-- 动态数据源 -->
+        <dynamic.version>3.3.2</dynamic.version>
+        <hutool.version>5.7.9</hutool.version>
+        <guava.version>23.0</guava.version>
+        <spring-boot-pagehelper.version>1.2.12</spring-boot-pagehelper.version>
+        <java-jwt.version>3.4.0</java-jwt.version>
+        <postgresql.version>42.2.5</postgresql.version>
+        <!-- mysql -->
+        <mysql.version>8.0.28</mysql.version>
+        <fastjson.version>1.2.15</fastjson.version>
+        <commons.pool2.version>2.7.0</commons.pool2.version>
+        <apache.collections.version>3.2.2</apache.collections.version>
+        <collections4.version>4.1</collections4.version>
+        <httpcomponents.version>4.5.5</httpcomponents.version>
+        <devtools.version>2.2.5.RELEASE</devtools.version>
+        <actuator.version>2.2.5.RELEASE</actuator.version>
+        <gson.version>2.8.6</gson.version>
+        <swagger2.version>2.8.0</swagger2.version>
+        <swagger.ui.version>1.9.3</swagger.ui.version>
+        <easypoi.version>4.3.0</easypoi.version>
+        <httpclient.version>4.5.8</httpclient.version>
+        <fileupload.version>1.4</fileupload.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Spring Boot -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- Spring Cloud -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- Spring Cloud Alibaba -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.verion}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- Nacos -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+                <version>${nacos.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+                <version>${nacos.version}</version>
+            </dependency>
+            <!-- Gateway -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-gateway</artifactId>
+                <version>${gateway.version}</version>
+            </dependency>
+            <!-- Sentinel -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+                <version>${sentinel.version}</version>
+            </dependency>
+
+            <!-- OpenFeign -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-openfeign</artifactId>
+                <version>${fegin.version}</version>
+            </dependency>
+            <!-- Redis -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${redis.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.redisson/redisson-spring-boot-starter -->
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson.version}</version>
+            </dependency>
+
+
+            <!-- Kafka -->
+            <dependency>
+                <groupId>org.springframework.kafka</groupId>
+                <artifactId>spring-kafka</artifactId>
+                <version>${kafka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-configuration-processor</artifactId>
+                <version>${configuration.processor.version}</version>
+                <optional>true</optional>
+            </dependency>
+            <!-- Actuator -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-actuator</artifactId>
+                <version>${actuator.version}</version>
+            </dependency>
+            <!-- Devtools -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-devtools</artifactId>
+                <version>${devtools.version}</version>
+                <scope>runtime</scope>
+                <optional>true</optional>
+            </dependency>
+            <!-- MyBatisPlus -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <!-- 动态数据源 -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+                <version>${dynamic.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-generator -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${spring-boot-pagehelper.version}</version>
+            </dependency>
+            <!-- HuTool -->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <!-- Lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
+            <dependency>
+                <groupId>com.auth0</groupId>
+                <artifactId>java-jwt</artifactId>
+                <version>4.1.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.28</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-pool2</artifactId>
+                <version>${commons.pool2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.vintage</groupId>
+                <artifactId>junit-vintage-engine</artifactId>
+                <version>5.6.2</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>${apache.collections.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${collections4.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpcomponents.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${gson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>swagger-bootstrap-ui</artifactId>
+                <version>${swagger.ui.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.afterturn</groupId>
+                <artifactId>easypoi-spring-boot-starter</artifactId>
+                <version>${easypoi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.afterturn</groupId>
+                <artifactId>easypoi-base</artifactId>
+                <version>${easypoi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.afterturn</groupId>
+                <artifactId>easypoi-web</artifactId>
+                <version>${easypoi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.afterturn</groupId>
+                <artifactId>easypoi-annotation</artifactId>
+                <version>${easypoi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>${fileupload.version}</version>
+            </dependency>
+        </dependencies>
+
+    </dependencyManagement>
+
+    <profiles>
+        <profile>
+            <id>default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <spring-boot-maven-plugin.version>2.2.10.RELEASE</spring-boot-maven-plugin.version>
+                <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
+                <maven-install-plugin.version>3.0.0-M1</maven-install-plugin.version>
+                <maven-exec-plugin.version>1.6.0</maven-exec-plugin.version>
+                <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
+                <maven-javadoc-plugin.version>3.1.1</maven-javadoc-plugin.version>
+                <maven-surefire-plugin.version>3.0.0-M4</maven-surefire-plugin.version>
+                <maven-enforcer-plugin.version>3.0.0-M3</maven-enforcer-plugin.version>
+                <maven-scm-provider-jgit-plugin.version>1.9.5</maven-scm-provider-jgit-plugin.version>
+                <spring-javaformat-maven-plugin.version>0.0.22</spring-javaformat-maven-plugin.version>
+                <maven-war-version>3.3.1</maven-war-version>
+            </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>io.spring.javaformat</groupId>
+                        <artifactId>spring-javaformat-maven-plugin</artifactId>
+                        <version>${spring-javaformat-maven-plugin.version}</version>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-war-plugin</artifactId>
+                        <version>${maven-war-version}</version>
+                    </plugin>
+
+                    <!-- mvn exec -->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>${maven-exec-plugin.version}</version>
+                    </plugin>
+
+                    <!-- mvn clean -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-clean-plugin</artifactId>
+                        <version>${maven-clean-plugin.version}</version>
+                        <configuration>
+                            <filesets>
+                                <!-- 清理 JRebel 产生的备份文件 -->
+                                <fileset>
+                                    <directory>${basedir}/**</directory>
+                                    <includes>
+                                        <include>.rebel.xml.bak</include>
+                                    </includes>
+                                </fileset>
+                            </filesets>
+                        </configuration>
+                    </plugin>
+
+                    <!-- mvn install -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-install-plugin</artifactId>
+                        <version>${maven-install-plugin.version}</version>
+                    </plugin>
+
+                    <!-- JavaDoc 生成插件 -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>${maven-javadoc-plugin.version}</version>
+                        <configuration>
+                            <!-- 生成 HTML 后 title 的名字 -->
+                            <windowtitle>消息总线 ${project.version} JavaDocs</windowtitle>
+                            <!--
+                                解决控制台乱码问题
+                                需要在【环境变量】中添加【系统变量】
+                                - 变量名：JAVA_TOOL_OPTIONS
+                                - 变量值：-Dfile.encoding=UTF-8
+                             -->
+                            <charset>UTF8</charset>
+                            <encoding>UTF8</encoding>
+                            <docencoding>UTF8</docencoding>
+                            <!--
+                                生成 JavaDoc 所在目录：reportOutputDirectory/destDir
+                                - reportOutputDirectory：输出的目录位置
+                                - destDir：文档生成的目录位置
+                             -->
+                            <destDir>javadocs</destDir>
+                            <reportOutputDirectory>${basedir}/docs</reportOutputDirectory>
+                        </configuration>
+                    </plugin>
+
+                    <!-- 测试用例插件 -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
+                        <configuration>
+                            <!-- 设置默认跳过测试 -->
+                            <skip>true</skip>
+                            <includes>
+                                <include>**/*Tests.java</include>
+                            </includes>
+                            <excludes>
+                                <exclude>**/Abstract*.java</exclude>
+                            </excludes>
+                            <systemPropertyVariables>
+                                <java.security.egd>file:/dev/./urandom</java.security.egd>
+                                <java.awt.headless>true</java.awt.headless>
+                            </systemPropertyVariables>
+                        </configuration>
+                    </plugin>
+
+                    <!--
+                        依赖冲突检查
+                        在进行 mvn clean package 的时候，会在 console 中打印出冲突的 jar 版本和其父 pom
+                     -->
+                    <!--                    <plugin>-->
+                    <!--                        <groupId>org.apache.maven.plugins</groupId>-->
+                    <!--                        <artifactId>maven-enforcer-plugin</artifactId>-->
+                    <!--                        <version>${maven-enforcer-plugin.version}</version>-->
+                    <!--                        <executions>-->
+                    <!--                            <execution>-->
+                    <!--                                <id>enforce-rules</id>-->
+                    <!--                                <goals>-->
+                    <!--                                    <goal>enforce</goal>-->
+                    <!--                                </goals>-->
+                    <!--                                <configuration>-->
+                    <!--                                    <rules>-->
+                    <!--                                        <bannedDependencies>-->
+                    <!--                                            <excludes>-->
+                    <!--                                                <exclude>commons-logging:*:*</exclude>-->
+                    <!--                                            </excludes>-->
+                    <!--                                            <searchTransitive>true</searchTransitive>-->
+                    <!--                                        </bannedDependencies>-->
+                    <!--                                    </rules>-->
+                    <!--                                    <fail>true</fail>-->
+                    <!--                                </configuration>-->
+                    <!--                            </execution>-->
+                    <!--                        </executions>-->
+                    <!--                    </plugin>-->
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+
+</project>
