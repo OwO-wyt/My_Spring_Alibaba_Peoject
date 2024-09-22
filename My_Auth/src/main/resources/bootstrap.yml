@@ -8,7 +8,7 @@ spring:
   application:
     name: my-auth
   profiles:
-    active: dev
+    active: mac
   devtools:
     restart:
       enabled: false

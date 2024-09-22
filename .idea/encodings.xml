@@ -7,6 +7,8 @@
     <file url="file://$PROJECT_DIR$/My_Business_01/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/My_Common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/My_Common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/My_Common_Redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/My_Common_Redis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/My_Gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/My_Gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/My_Kafka_Consumer/src/main/java" charset="UTF-8" />

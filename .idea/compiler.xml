@@ -10,6 +10,7 @@
         <module name="My_Kafka_Consumer" />
         <module name="My_Gateway" />
         <module name="My_Kafka_Provider" />
+        <module name="My_Common_Redis" />
         <module name="My_Common" />
         <module name="My_Log" />
         <module name="My_Business_01" />

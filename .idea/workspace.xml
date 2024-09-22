@@ -4,10 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01e1fc31-fa11-4270-8c12-864106ab01a5" name="Changes" comment="">
+    <list default="true" id="01e1fc31-fa11-4270-8c12-864106ab01a5" name="Changes" comment="上传ignore">
+      <change afterPath="$PROJECT_DIR$/My_Auth/src/main/resources/bootstrap-mac.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_Business_01/src/main/resources/bootstrap-mac.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_Common_Redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_Common_Redis/src/main/java/com/www/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_Common_Redis/src/main/java/com/www/utils/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_Common_Redis/src/test/java/com/www/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_Auth/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/My_Auth/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_Business_01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/My_Business_01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_Business_01/src/main/java/com/www/controller/SystemLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/My_Business_01/src/main/java/com/www/controller/SystemLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_Business_01/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/My_Business_01/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/my-business-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/my-business-error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/my-business-info.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/my-business-info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,23 +55,34 @@
   "associatedIndex": 5
 }]]></component>
   <component name="ProjectId" id="2gBXgpBJJf0ZZ2lGFWfJEWn3nAQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.My_Spring_Alibaba_Peoject [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.MyBusinessApplication.executor": "Run",
     "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/wangyuntao/study/code/My_Spring_Alibaba_Peoject",
+    "last_opened_file_path": "/Users/wangyuntao/study/code/My_Spring_Alibaba_Peoject/My_Common_Redis/src/main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -67,15 +91,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/My_Common_Redis/src/main" />
+      <recent name="$PROJECT_DIR$/My_Auth/src/main/resources" />
+      <recent name="$PROJECT_DIR$/My_Business_01/src/main/resources" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="D:\Code\03-project\My_Spring_Alibaba_Peoject\My_Business_01\src\main\resources\mappers" />
-      <recent name="D:\Code\03-project\My_Spring_Alibaba_Peoject\My_Business_01\src\main\java\com\www\mapper" />
-      <recent name="D:\Code\03-project\My_Spring_Alibaba_Peoject\My_Business_01\src\main\java\com\www\service" />
-      <recent name="D:\Code\03-project\My_Spring_Alibaba_Peoject\My_Business_01\src\main\java\com\www\service\impl" />
-      <recent name="D:\Code\03-project\My_Spring_Alibaba_Peoject\My_Common\src\main\java\com\www\pojo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.www" />
       <recent name="com.www.utils" />
+      <recent name="com.www" />
       <recent name="com.www.config" />
       <recent name="com.www.pojo" />
       <recent name="com.www.controller" />
@@ -210,11 +234,33 @@
       <workItem from="1715605028520" duration="17000" />
       <workItem from="1721270533763" duration="5758000" />
       <workItem from="1721371714928" duration="356000" />
-      <workItem from="1726987975115" duration="817000" />
+      <workItem from="1726987975115" duration="10472000" />
     </task>
+    <task id="LOCAL-00001" summary="删除target">
+      <option name="closed" value="true" />
+      <created>1726990671086</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726990671086</updated>
+    </task>
+    <task id="LOCAL-00002" summary="上传ignore">
+      <option name="closed" value="true" />
+      <created>1726991875451</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726991875451</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="删除target" />
+    <MESSAGE value="上传ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传ignore" />
   </component>
 </project>

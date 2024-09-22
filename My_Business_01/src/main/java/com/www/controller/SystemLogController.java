@@ -1,9 +1,11 @@
 package com.www.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.www.pojo.SystemLogEntity;
 import com.www.response.Response;
 import com.www.service.SystemLogService;
+import com.www.utils.RedisUtil;
 import io.swagger.annotations.Api;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -26,11 +28,22 @@ public class SystemLogController {
 
     @Resource
     private SystemLogService systemLogService;
+//    @Resource
+//    private RedisTemplate<String , String> redisTemplate;
+    @Resource
+    private RedisUtil redisUtil;
 
 
     @PostMapping("/getById")
     public Response getById(Long id) {
-        return Response.ok(systemLogService.getById(id));
+        Object object = redisUtil.get("systemLog:" + id);
+        if (object != null) {
+            return Response.ok(JSON.parseObject(object.toString(), SystemLogEntity.class));
+        } else {
+            SystemLogEntity systemLogEntity = systemLogService.getById(id);
+            redisUtil.set("systemLog:" + id, JSON.toJSONString(systemLogEntity));
+            return Response.ok(systemLogEntity);
+        }
     }
 
 
