@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01e1fc31-fa11-4270-8c12-864106ab01a5" name="Changes" comment="" />
+    <list default="true" id="01e1fc31-fa11-4270-8c12-864106ab01a5" name="Changes" comment="上传ignore">
+      <change afterPath="$PROJECT_DIR$/My_Auth/src/main/resources/bootstrap-mac.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_Business_01/src/main/resources/bootstrap-mac.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_Common_Redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_Common_Redis/src/main/java/com/www/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_Common_Redis/src/main/java/com/www/utils/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_Common_Redis/src/test/java/com/www/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_Auth/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/My_Auth/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_Business_01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/My_Business_01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_Business_01/src/main/java/com/www/controller/SystemLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/My_Business_01/src/main/java/com/www/controller/SystemLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_Business_01/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/My_Business_01/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/my-business-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/my-business-error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/my-business-info.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/my-business-info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,50 +38,68 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../Donload/Maven/apache-maven-3.8.5" />
-        <option name="userSettingsFile" value="D:\Donload\Maven\settings.xml" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../maven/settings/settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
   <component name="ProjectId" id="2gBXgpBJJf0ZZ2lGFWfJEWn3nAQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/My_Business_01/src/main/resources/mappers" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.My_Spring_Alibaba_Peoject [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.MyBusinessApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/wangyuntao/study/code/My_Spring_Alibaba_Peoject/My_Common_Redis/src/main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/My_Common_Redis/src/main" />
+      <recent name="$PROJECT_DIR$/My_Auth/src/main/resources" />
+      <recent name="$PROJECT_DIR$/My_Business_01/src/main/resources" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="D:\Code\03-project\My_Spring_Alibaba_Peoject\My_Business_01\src\main\resources\mappers" />
-      <recent name="D:\Code\03-project\My_Spring_Alibaba_Peoject\My_Business_01\src\main\java\com\www\mapper" />
-      <recent name="D:\Code\03-project\My_Spring_Alibaba_Peoject\My_Business_01\src\main\java\com\www\service" />
-      <recent name="D:\Code\03-project\My_Spring_Alibaba_Peoject\My_Business_01\src\main\java\com\www\service\impl" />
-      <recent name="D:\Code\03-project\My_Spring_Alibaba_Peoject\My_Common\src\main\java\com\www\pojo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.www" />
       <recent name="com.www.utils" />
+      <recent name="com.www" />
       <recent name="com.www.config" />
       <recent name="com.www.pojo" />
       <recent name="com.www.controller" />
@@ -73,6 +108,9 @@
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
@@ -125,34 +163,34 @@
     </configuration>
     <configuration name="MyAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="My_Auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.www.MyAuthApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.www.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.www.MyAuthApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="MyBusinessApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="My_Business_01" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.www.MyBusinessApplication" />
       <option name="SHORTEN_COMMAND_LINE" value="MANIFEST" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.www.MyBusinessApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="MyGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="My_Gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.www.MyGatewayApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.www.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.www.MyGatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -173,6 +211,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -188,10 +234,33 @@
       <workItem from="1715605028520" duration="17000" />
       <workItem from="1721270533763" duration="5758000" />
       <workItem from="1721371714928" duration="356000" />
+      <workItem from="1726987975115" duration="10472000" />
     </task>
+    <task id="LOCAL-00001" summary="删除target">
+      <option name="closed" value="true" />
+      <created>1726990671086</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726990671086</updated>
+    </task>
+    <task id="LOCAL-00002" summary="上传ignore">
+      <option name="closed" value="true" />
+      <created>1726991875451</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726991875451</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="删除target" />
+    <MESSAGE value="上传ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传ignore" />
   </component>
 </project>

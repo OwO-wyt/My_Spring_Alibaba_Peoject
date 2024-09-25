@@ -8,7 +8,7 @@ spring:
   application:
     name: my-business
   profiles:
-    active: dev
+    active: mac
   devtools:
     restart:
       enabled: false

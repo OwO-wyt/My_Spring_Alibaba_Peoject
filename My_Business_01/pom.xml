@@ -17,6 +17,11 @@
             <groupId>com.www</groupId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <artifactId>My_Common_Redis</artifactId>
+            <groupId>com.www</groupId>
+            <version>${project.version}</version>
+        </dependency>
 
         <!-- Nacos -->
         <dependency>

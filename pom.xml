@@ -16,6 +16,7 @@
         <module>My_Kafka_Consumer</module>
         <module>My_Business_01</module>
         <module>My_Common</module>
+        <module>My_Common_Redis</module>
     </modules>
 
     <!--统一管理jar包版本-->
@@ -47,6 +48,10 @@
         <redis.version>2.2.2.RELEASE</redis.version>
         <!-- redisson -->
         <redisson.version>3.14.0</redisson.version>
+        <!-- jedis -->
+        <jedis.version>3.3.0</jedis.version>
+        <!-- common-pool2 -->
+        <common-pool2.version>2.11.1</common-pool2.version>
 
         <!-- Kafka -->
         <kafka.version>2.3.4.RELEASE</kafka.version>
@@ -147,6 +152,22 @@
                 <artifactId>redisson-spring-boot-starter</artifactId>
                 <version>${redisson.version}</version>
             </dependency>
+
+
+            <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-pool2 -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-pool2</artifactId>
+                <version>${common-pool2.version}</version>
+            </dependency>
+
 
 
             <!-- Kafka -->
