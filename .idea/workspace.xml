@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01e1fc31-fa11-4270-8c12-864106ab01a5" name="Changes" comment="上传ignore">
-      <change afterPath="$PROJECT_DIR$/My_Auth/src/main/resources/bootstrap-mac.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/My_Business_01/src/main/resources/bootstrap-mac.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/My_Common_Redis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/My_Common_Redis/src/main/java/com/www/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/My_Common_Redis/src/main/java/com/www/utils/RedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/My_Common_Redis/src/test/java/com/www/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="01e1fc31-fa11-4270-8c12-864106ab01a5" name="Changes" comment="配置mysql、redis">
+      <change afterPath="$PROJECT_DIR$/My_Common/src/main/java/com/sensetime/manual/common/enums/StatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/My_Common/src/main/java/com/sensetime/manual/model/base/BasePO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/My_Auth/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/My_Auth/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/My_Business_01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/My_Business_01/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/My_Business_01/src/main/java/com/www/controller/SystemLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/My_Business_01/src/main/java/com/www/controller/SystemLogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/My_Business_01/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/My_Business_01/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/my-business-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/my-business-error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/my-business-info.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/my-business-info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My_Common/src/main/java/com/www/code/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/My_Common/src/main/java/com/www/code/CodeGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +39,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2gBXgpBJJf0ZZ2lGFWfJEWn3nAQ" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -64,6 +52,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CodeGenerator.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.My_Spring_Alibaba_Peoject [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -115,7 +104,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MyBusinessApplication">
+  <component name="RunManager" selected="Application.CodeGenerator">
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.www.code.CodeGenerator" />
       <module name="My_Common" />
@@ -234,7 +223,8 @@
       <workItem from="1715605028520" duration="17000" />
       <workItem from="1721270533763" duration="5758000" />
       <workItem from="1721371714928" duration="356000" />
-      <workItem from="1726987975115" duration="10472000" />
+      <workItem from="1726987975115" duration="10913000" />
+      <workItem from="1727322567888" duration="1926000" />
     </task>
     <task id="LOCAL-00001" summary="删除target">
       <option name="closed" value="true" />
@@ -252,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726991875451</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="配置mysql、redis">
+      <option name="closed" value="true" />
+      <created>1727014433216</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727014433216</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +259,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="删除target" />
     <MESSAGE value="上传ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="上传ignore" />
+    <MESSAGE value="配置mysql、redis" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置mysql、redis" />
   </component>
 </project>

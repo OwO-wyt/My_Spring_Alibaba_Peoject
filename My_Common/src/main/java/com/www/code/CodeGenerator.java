@@ -17,16 +17,32 @@ import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 public class CodeGenerator {
 
 
-    public static final String OUTPUTDIR = "D://test";
+    /**
+     *         DataSourceConfig dsc = new DataSourceConfig();
+     *         dsc.setUrl("jdbc:mysql://bj.paas.sensetime.com:35739/manual_platform?useUnicode=true&useSSL=false&characterEncoding=utf8&allowPublicKeyRetrieval=true&serverTimezone=GMT");
+     *         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
+     *         dsc.setUsername("martgo");
+     *         dsc.setPassword("zVdc5jzsNWsAVqxA");
+     */
+    /**
+     * 项目名称
+     */
+    private static final String projectName = "manual-dispatch-platform";
+    /**
+     * 模块名称
+     */
+    private static final String moduleName = "manual-job";
 
-    public static final String TABLES = "system_log_0";
+    public static final String OUTPUTDIR = "/Users/wangyuntao/work/code-generator/" + projectName + "/" + moduleName;
 
-    public static final String PARENT = "com.www";
+    public static final String TABLES = "algorithmic_order";
 
-    public static final String USERNAME = "root";
-    public static final String PASSWORD = "55555wyt";
+    public static final String PARENT = "com.sensetime.manual.repository";
+
+    public static final String USERNAME = "martgo";
+    public static final String PASSWORD = "zVdc5jzsNWsAVqxA";
     public static final String DRIVER_NAME = "com.mysql.cj.jdbc.Driver";
-    public static final String URL = "jdbc:mysql://192.168.192.192:3306/my_project?useUnicode=true&useSSL=false&characterEncoding=utf8";
+    public static final String URL = "jdbc:mysql://bj.paas.sensetime.com:35739/manual_platform?useUnicode=true&useSSL=false&characterEncoding=utf8&allowPublicKeyRetrieval=true&serverTimezone=GMT";
 
 
     /**
@@ -43,7 +59,7 @@ public class CodeGenerator {
         // 是否支持AR模式
         config.setActiveRecord(true)
                 // 作者
-                .setAuthor("夕颜")
+                .setAuthor("wangyuntao")
                 // 生成路径，最好使用绝对路径
                 .setOutputDir(OUTPUTDIR + "/src/main/java/")
                 // 文件覆盖
@@ -51,10 +67,8 @@ public class CodeGenerator {
                 // 主键策略
                 .setIdType(IdType.AUTO)
 
-                //实体类结尾名称
-                .setEntityName("%sEntity")
                 //实体命名方式  默认值：null 例如：%sEntity 生成 UserEntity
-                .setEntityName("%sEntity")
+                .setEntityName("%sDO")
                 //mapper 命名方式 默认值：null 例如：%sDao 生成 UserDao
                 .setMapperName("%sMapper")
                 //Mapper xml 命名方式   默认值：null 例如：%sDao 生成 UserDao.xml
@@ -103,7 +117,11 @@ public class CodeGenerator {
                 //.setExclude(new String[]{"test"})
 
                 //驼峰转连字符
-                .setControllerMappingHyphenStyle(true);
+                .setControllerMappingHyphenStyle(true)
+                // 公共字段
+                .setSuperEntityColumns("id", "status", "created_time", "created_by", "last_updated_time", "last_updated_by")
+                // 父类
+                .setSuperEntityClass("com.sensetime.manual.model.base.BasePO");
 
         // 4. 包名策略配置
         PackageConfig pkConfig = new PackageConfig();
@@ -112,7 +130,7 @@ public class CodeGenerator {
                 .setService("service")
                 .setServiceImpl("service.impl")
                 .setController("controller")
-                .setEntity("pojo")
+                .setEntity("domain")
                 .setXml("mappers");
 
         //5. 整合配置
